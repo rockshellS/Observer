@@ -17,14 +17,19 @@ code {
     monospace;
 }
 .App{
-  box-shadow: 2px 5px 10px grey;
   margin: 0;
 
 }
 
+
 .nav--background{
-background-image: url("./assets/music.jpg");
-min-height: 200px;
+box-shadow: 2px 1px 20px aqua;
+/* background-image: url("./assets/music.jpg"); */
+background: #232526;  
+background: -webkit-linear-gradient(to left, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+min-height: 100px;
 background-position: 0px -55px;
 background-repeat: none;
 background-size: cover;
@@ -44,10 +49,25 @@ opacity: .8;
   font-weight: bold;
   padding: 5px;
   float: right;
-  margin-top: 5px;
+  margin-top: 70px;
+  border-radius: 2px;
 }
 
 
 .nav--btn:hover{
   color: aqua;
+}
+
+
+.nav--btn:focus {
+  outline: none;
+}
+
+.nav--btn:active {
+box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+
+}
+
+h3 {
+  color: white;
 }
